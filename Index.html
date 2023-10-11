@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/CSS/root.css">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="icon" href="./assets/Images/WEBP/Pot_1.webp">
+    <link rel="stylesheet" href="./assets/js/style.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Yoomi</title>
+</head>
+
+<body class="overflow-hid den">
+    <!-- preloader -->
+    <!-- <div id="preloader" class="overflow-hidden">
+        <div id="preloader_bg" class="d-flex align-items-center justify-content-center">
+            <img class="preloader_img" src="./assets/Images/WEBP/Yoomi_logo.webp" alt="Yoomi_logo">
+        </div> 
+    </div>-->
+    <!-- nav -->
+    <section class="bg_white position-sticky z-3 top-0">
+        <div class="my_container">
+            <div class="py-4 d-flex justify-content-between align-items-center">
+                <img class="w-118px" src="./assets/Images/WEBP/Yoomi_logo.webp" alt="">
+                <ul class="mb-0 ps-0 d-md-flex gap-4 text-white d-none d-md-block">
+                    <li><a href="#About" class="text_black Inter fw-500">About Us</a></li>
+                    <li><a href="#news" class="text_black Inter fw-500">News</a></li>
+                    <li><a href="#Contact_us" class="text_black Inter fw-500">Contact Us</a></li>
+                    <li><a href="#" class="btn_1 Inter fw-600">Get Started</a></li>
+                </ul>
+                <button id="openNav" onclick="openNav()" class="open d-md-none" type="button">&#9776</button>
+                <div id="Menu" class="d-md-none navbar1 d-flex justify-content-center align-items-center text-center">
+                    <button class="menu position-absolute closbtn" onclick="closeNav()" type="button">&times;</button>
+                    <ul class="mb-0 ps-0 d-flex flex-column gap-4 text-white">
+                        <li onclick="closeNav()"><a href="#About" class="text_black Inter fw-500">About Us</a></li>
+                        <li onclick="closeNav()"><a href="#news" class="text_black Inter fw-500">News</a></li>
+                        <li onclick="closeNav()"><a href="#Contact_us" class="text_black Inter fw-500">Contact Us</a>
+                        </li>
+                        <li onclick="closeNav()"><a href="#" class="btn_1 Inter fw-600">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- header -->
+    <section class="overflow-hidden pt_5 pb_5 mt-5 bg_white position-relative">
+        <img class="position-absolute start-0 d-none d-sm-block" src="./assets/Images/WEBP/header_left.webp"
+            alt="header_left">
+        <img class="position-absolute end-0 d-none d-sm-block" src="./assets/Images/WEBP/header_right.webp"
+            alt="header_left">
+        <img class="pot_1" src="./assets/Images/WEBP/Pot_1.webp" alt="Pot_1">
+        <img class="pot_2" src="./assets/Images/WEBP/Pot_2.webp" alt="Pot_2">
+        <div class="pb_5">
+            <div class="my_container position-relative z-1">
+                <div class="d-flex align-items-center justify-content-center text-center">
+                    <h1 class="max-w-900px Jakarta-sans fs-52px fw-800">Next Generation <span class="fw-400">Patient
+                            Engagement and RTM Solution✨</span>
+                    </h1>
+                </div>
+                <p class="mb-0 d-flex align-items-center justify-content-center opacity-75 fs-24px Inter pt-2">Industry
+                    leading
+                    AI
+                    motion-tracking
+                    technology</p>
+
+                <div class="d-flex align-items-center justify-content-center pt-5 pb-5">
+                    <div class="px-2 px-sm-0">
+                        <div class="Email_box">
+                            <div class="d-flex align-items-center justify-content-sm-between gap-5 flex">
+                                <input type="email" placeholder="Enter Your Email" class="border_none">
+                                <a href="#" class="btn_1 Inter fw-600 ms-sm-5">Get Started</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="pt-4 mt-5 w-100" src="./assets/Images/WEBP/header_gradient.webp" alt="background_gradient">
+    </section>
+    <div class="my_container">
+        <img class="w-100 dashboard px-sm-5 px_0" src="./assets/Images/WEBP/Dashboard_img.webp" alt="Dashboard_img">
+    </div>
+    <!-- Features -->
+    <section class="overflow-hidden py-5 mt_-5">
+
+        <p class="Inter fw-500 fs-16px text_light_blue d-flex align-items-center justify-content-center pt_6 mb-0"
+            data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">Features
+        </p>
+        <p class="Inter fw-400 mb-0 fs-32px d-flex align-items-center justify-content-center text-center"
+            data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">Explore
+            Our
+            <span class="fw-600"> Amazing Features</span>
+        </p>
+        <div class=" d-flex align-items-center justify-content-center text-center pt-1" data-aos="zoom-in"
+            data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">
+            <p class="mb-0 opacity-75 Inter fw-400 fs-16px max-w-684px">Yoomi is more than just a regular remote
+                monitoring
+                solution. Our
+                product supports
+                patients and
+                providers through every
+                step of the rehabilitation process</p>
+        </div>
+        <div class="my_container py-5 box">
+            <div class="row justify-content-between">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250"
+                    data-aos-easing="linear">
+                    <p class="Inter fs-16px fw-500 text_light_blue mb-0">Library</p>
+                    <p class="Inter fs-32px fw-400 mb-0">Extensive Exercise <span class="fw-600">Library</span></p>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/Images/WEBP/Tikk_mark.webp" alt="Tikk_mark">
+                        <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Utilize Yoomi’s HEP templates to quickly
+                            create and assign programs to your patients</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/Images/WEBP/Tikk_mark.webp" alt="Tikk_mark">
+                        <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Choose from our library of exercises for
+                            all patient cases</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/Images/WEBP/Tikk_mark.webp" alt="Tikk_mark">
+                        <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Use Yoomi’s industry-leading exercise
+                            generation tool to create your own exercises that track adherence and form in
+                            seconds</p>
+                    </div>
+
+
+                    <div class="py-5">
+                        <a href="#" class="btn_2 mb-0 Inter fs-16px fw-600">View the Library</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 position-relative overflow-hidden" data-aos="zoom-in" data-aos-duration="500"
+                    data-aos-delay="250" data-aos-easing="linear">
+                    <img class="bg_card w-250px" src="./assets/Images/WEBP/slider_bg_card.webp" alt="slider_bg_card">
+                    <div class="slider_1">
+
+                        <div class="pt-5">
+                            <span class="center"><img class="max-w-400px"
+                                    src="./assets/Images/WEBP/Man_excercise_img.webp" alt="Man_excercise_img"></span>
+                        </div>
+
+                        <div class="pt-5">
+                            <span class="center"><img class="max-w-400px"
+                                    src="./assets/Images/WEBP/Man_excercise_img_2.webp" alt="Man_excercise_img"></span>
+                        </div>
+
+                        <div class="pt-5">
+                            <span class="center"><img class="max-w-400px"
+                                    src="./assets/Images/WEBP/Man_excercise_img.webp" alt="Man_excercise_img"></span>
+                        </div>
+
+                        <div class="pt-5">
+                            <span class="center"><img class="max-w-400px"
+                                    src="./assets/Images/WEBP/Man_excercise_img_2.webp" alt="Man_excercise_img"></span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feedback -->
+    <section class="overflow-hidden py-5">
+        <div class="my_container py-5 box">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250"
+                    data-aos-easing="linear">
+                    <img class="w-100" src="./assets/Images/WEBP/Feedback_img.webp" alt="Feedback_img">
+                </div>
+
+                <div class="col-lg-5" data-aos="fade-left" data-aos-duration="500" data-aos-delay="250"
+                    data-aos-easing="linear">
+                    <p class="Inter fs-16px fw-500 text_light_blue mb-0">TRACKING</p>
+                    <p class="Inter fs-32px fw-400 mb-0">Cutting Edge Motion <span
+                            class="fw-600">Tracking/Feedback</span></p>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/Images/WEBP/Tikk_mark.webp" alt="Tikk_mark">
+                        <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Provides a holistic, real-time
+                            analysis of
+                            patient exercise form, capturing 300+ data points and critical metrics.</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/Images/WEBP/Tikk_mark.webp" alt="Tikk_mark">
+                        <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Delivers immediate feedback and guidance to
+                            correct and improve exercise form.</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/Images/WEBP/Tikk_mark.webp" alt="Tikk_mark">
+                        <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Supported by the most accurate
+                            motion-tracking model designed for rehabilitation, Yoomi Vision</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="./assets/Images/WEBP/Tikk_mark.webp" alt="Tikk_mark">
+                        <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Requires no custom hardware, sensors, or
+                            equipment.</p>
+                    </div>
+
+
+                    <div class="py-5">
+                        <a href="#" class="btn_2 mb-0 Inter fs-16px fw-600">Test it Yourself</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- report -->
+    <section class="overflow-hidden py-5 my-5">
+        <div class="my_container box">
+            <div class="row reverse align-items-center justify-content-center">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250"
+                    data-aos-easing="linear">
+                    <p class="Inter fs-16px fw-500 text_light_blue mb-0">report</p>
+                    <p class="Inter fs-40px fw-400 mb-0">Reporting<span class="fw-600">+ Analyticsg</span></p>
+                    <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Track patient progress over time with
+                        compliance, pain, RPE, ROM and other key metrics</p>
+                    <div class="pt-5 pb-5 pb-lg-0">
+                        <a href="#" class="btn_2 mb-0 Inter fs-16px fw-600">View the Matrics</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-10 col-sm-10" data-aos="zoom-in" data-aos-duration="500"
+                    data-aos-delay="250" data-aos-easing="linear">
+                    <img class="w-100" src="./assets/Images/WEBP/report_img.webp" alt="report_img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tracking -->
+    <section class="overflow-hidden py-md-5 pb-5 my-md-5">
+        <div class="my_container py-5 box">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250"
+                    data-aos-easing="linear">
+                    <img class="w-100" src="./assets/Images/WEBP/monitor-img.webp" alt="monitor-img">
+                </div>
+
+                <div class="col-lg-5" data-aos="fade-left" data-aos-duration="500" data-aos-delay="250"
+                    data-aos-easing="linear">
+                    <p class="Inter fs-16px fw-500 text_light_blue mb-0">TRACKING</p>
+                    <p class="Inter fs-40px fw-400 mb-0">Remote Therapeutic <span class="fw-600">Monitoring +
+                            Billing</span></p>
+                    <p class="mb-0 Inter fw-400 fs-16px opacity_70 pt-2">Enhance patient care with remote monitoring,
+                        and
+                        enable
+                        providers to generate over
+                        $160 per patient per month in
+                        additional revenue</p>
+                    <div class="pt-5">
+                        <a href="#" class="btn_2 mb-0 Inter fs-16px fw-600">Check Out the Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- platform -->
+    <section class="py-md-5 bg_light overflow-hidden">
+        <div class="container">
+            <p class="mb-0 Inter fw-500 fs-16px text_light_blue d-flex align-items-center justify-content-center pt-3"
+                data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">
+                Platform</p>
+            <p class="mb-0 Jakarta-sans fw-400 fs-40px d-flex align-items-center justify-content-center"
+                data-aos="zoom-in" data-aos-duration="600" data-aos-delay="250" data-aos-easing="linear">
+                Through <span class="fw-600 ps-1">Our Platform</span></p>
+            <p class="mb-0 Inter opacity-75 pb-5 fw-400 fs-16px d-flex align-items-center justify-content-center"
+                data-aos="zoom-in" data-aos-duration="700" data-aos-delay="250" data-aos-easing="linear">
+                We’ve helped out partners and patients achieve</p>
+
+            <div class="row justify-content-center pb-md-5">
+
+                <div class="col-lg-3 col-sm-6 d-flex align-items-center justify-content-center" data-aos="flip-left"
+                    data-aos-duration="700" data-aos-delay="250" data-aos-easing="linear">
+                    <div class="card_1 position-relative">
+                        <img class="position-absolute bottom-0 end-0 w_100px"
+                            src="./assets/Images/WEBP/header_right.webp" alt="header_right">
+                        <h1
+                            class="Inter fw-600 fs-52px text-white d-flex align-items-center justify-content-center pt-5 mb-0">
+                            50%
+                        </h1>
+                        <p class="Inter fw-400 fs-16px text-white d-flex align-items-center justify-content-center">
+                            Reduction in Pain</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 pt-3 pt-sm-0 d-flex align-items-center justify-content-center"
+                    data-aos="flip-down" data-aos-duration="700" data-aos-delay="250" data-aos-easing="linear">
+                    <div class="card_2 position-relative">
+                        <img class="w_100px position-absolute end-0 bottom-0"
+                            src="./assets/Images/WEBP/header_right.webp" alt="header_right">
+                        <h1
+                            class="Inter fw-600 fs-52px text-white d-flex align-items-center justify-content-center pt-5 mb-0">
+                            90%
+                        </h1>
+                        <p
+                            class="Inter fw-400 fs-16px text-white d-flex align-items-center justify-content-center text-center px-4">
+                            Increase In-Patient Satisfaction</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6 pt-3 pt-lg-0 d-flex align-items-center justify-content-center"
+                    data-aos="flip-right" data-aos-duration="700" data-aos-delay="250" data-aos-easing="linear">
+                    <div class="card_3 position-relative">
+                        <img class="w_100px position-absolute end-0 bottom-0"
+                            src="./assets/Images/WEBP/header_right.webp" alt="header_right">
+                        <h1
+                            class="Inter fw-600 fs-52px text-white d-flex align-items-center justify-content-center pt-5 mb-0">
+                            60%
+                        </h1>
+                        <p class="Inter fw-400 fs-16px text-white d-flex align-items-center justify-content-center">
+                            Faster Recovery</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-5 mt-5 mb-4">
+                <p class="mb-0 Inter fw-500 fs-16px text_light_blue d-flex align-items-center justify-content-center pt-3"
+                    data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">
+                    Forecast your profits</p>
+                <div class="d-flex align-items-center justify-content-center text-center" data-aos="zoom-in"
+                    data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">
+                    <p class="mb-0 Jakarta-sans fw-400 fs-40px max-w-592px">
+                        Calculate Your<span class="fw-700"> Reimbursement With Yoomi</span></p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center pt-4">
+
+
+                <div class="col-lg-3">
+                    <div class="Patient_card">
+                        <p
+                            class="mb-0 Inter text-white fw-600 px-3 pt-4 d-flex align-items-center justify-content-center">
+                            Total Patients per month</p>
+                        <img class="px-3 ms-4 pb-4 pt-2" src="./assets/Images/WEBP/scrolly.webp" alt="scrolly">
+                        <div class="d-flex align-items-center justify-content-center pb-4">
+                            <span
+                                class="box_2 Inter fw-600 fs-28px d-flex align-items-center justify-content-center py-1">100</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+
+
+                    <div class="box_3 mt-4 mt-lg-0">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 Inter fs-16px fw-600">Initial Setup</p>
+                            <a href="#" class="btn_1 Inter fs-28px fw-600">$ 40.26</a>
+                        </div>
+                    </div>
+
+                    <div class="box_3 mt-4">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 Inter fs-16px fw-600">Initial Setup</p>
+                            <a href="#" class="btn_1 Inter fs-28px fw-600">$ 40.26</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="box_3 mt-lg-0 mt-4">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 Inter fs-16px fw-600">Initial Setup</p>
+                            <a href="#" class="btn_1 Inter fs-28px fw-600">$ 40.26</a>
+                        </div>
+                    </div>
+
+                    <div class="box_3 mt-4">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <p class="mb-0 Inter fs-16px fw-600">Initial Setup</p>
+                            <a href="#" class="btn_1 Inter fs-28px fw-600">$ 40.26</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- Healthcare -->
+    <section class="py-5 overflow-hidden mt-5">
+        <div class="my_container">
+            <p class="Inter fw-500 fs-16px text_light_blue mb-0 d-flex align-items-center justify-content-center"
+                data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">
+                Partners</p>
+            <div class="d-flex align-items-center justify-content-center text-center" data-aos="zoom-in"
+                data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">
+                <p class="Jakarta-sans fs-40px fw-400 max-w-684px mb-0 pb-5">Recognized by Leading <span
+                        class="fw-600">Healthcare
+                        Institutions</span></p>
+            </div>
+            <div class="slider-container" data-aos="fade-down" data-aos-duration="500" data-aos-delay="250"
+                data-aos-easing="linear">
+                <div class="slider">
+                    <div class="image">
+                        <a href="#"><img src="./assets/Images/WEBP/NIH.webp" alt="NIH"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"> <img src="./assets/Images/WEBP/Carol.webp" alt="Carol"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="./assets/Images/WEBP/Rwj.webp" alt="Rwj"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="./assets/Images/WEBP/G_G_img.webp" alt="G_G_img"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="./assets/Images/WEBP/Cornell_university.webp"
+                                alt="Carnoll_university"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="./assets/Images/WEBP/NIH.webp" alt="NIH"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"> <img src="./assets/Images/WEBP/Carol.webp" alt="Carol"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="./assets/Images/WEBP/Rwj.webp" alt="Rwj"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="./assets/Images/WEBP/G_G_img.webp" alt="G_G_img"></a>
+                    </div>
+                    <div class="image">
+                        <a href="#"><img src="./assets/Images/WEBP/Cornell_university.webp"
+                                alt="Carnoll_university"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tab -->
+    <section class="overflow-hidden py-md-5">
+        <p class="text_light_blue mb-0 Inter fs-16px fw-500 d-flex align-items-center justify-content-center pb-2">Know
+            More
+        </p>
+        <div class="d-flex align-items-center justify-content-center text-center mb-5">
+            <h1 class="mb-0 Inter fs-40px fw-400 max-w-615px">And Used
+                by the Biggest <span class="fw-600">Figures in Sports and Rehab</span></h1>
+        </div>
+
+        <div class="my_container">
+            <div class="mb-0 pb-5 mb-md-5" id="news">
+                <div id="London" class="tabcontent">
+                    <span class="d-flex align-items-center justify-content-center py-4"><img class="w-100 max-w-900px"
+                            src="./assets/Images/WEBP/Main_img_2.webp" alt="Main_img_2" data-aos="zoom-in"
+                            data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear"></span>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                    <span class="d-flex align-items-center justify-content-center py-4"><img class="w-100 max-w-900px"
+                            src="./assets/Images/WEBP/Main_img_1.webp" alt="main_img_1" data-aos="zoom-in"
+                            data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear"></span>
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                    <span class="d-flex align-items-center justify-content-center py-4"><img class="w-100 max-w-900px"
+                            src="./assets/Images/WEBP/Main_img_3.webp" alt="Main_img_3" data-aos="zoom-in"
+                            data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear"></span>
+                </div>
+
+                <div id="Oslo" class="tabcontent">
+                    <span class="d-flex align-items-center justify-content-center py-4"><img class="w-100 max-w-900px"
+                            src="./assets/Images/WEBP/Main_img_4.webp" alt="Main_img_4" data-aos="zoom-in"
+                            data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear"></span>
+                </div>
+
+                <div class="d-flex flex-wrap align-items-center justify-content-center gap-4 pt-4">
+                    <img onclick="openCity('London')" class="pointer img_width" id="defaultOpen"
+                        src="./assets/Images/WEBP/Tab_img_2.webp" alt="Tab_img_1" data-aos="zoom-in"
+                        data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">
+
+                    <img onclick="openCity('Paris')" class="pointer img_width" src="./assets/Images/WEBP/Tab_img_1.webp"
+                        alt="Tab_img_2" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250"
+                        data-aos-easing="linear">
+
+                    <img onclick="openCity('Tokyo')" class="pointer img_width" src="./assets/Images/WEBP/Tab_img_3.webp"
+                        alt="Tab_img_3" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250"
+                        data-aos-easing="linear">
+
+                    <img onclick="openCity('Oslo')" class="pointer img_width" src="./assets/Images/WEBP/Tab_img_4.webp"
+                        alt="Tab_img_4" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250"
+                        data-aos-easing="linear">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- safety_Sec -->
+    <section class="overflow-hidden py-lg-5 pt-md-5  pt-lg-0">
+        <div class="container">
+            <div class="row align-items-center justify-content-between py-5">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-duration="500" data-aos-delay="250"
+                    data-aos-easing="linear">
+                    <p class="mb-0 text_light_blue Inter fs-16px fw-500">The Best for you</p>
+                    <p class="mb-0 Jakarta-sans fw-400 fs-40px">Committed to Industry-Standard <span
+                            class="Jakarta-sans fw-600">Compliance
+                            and Safety</span></p>
+                    <p class="mb-0 opacity-75 Inter fs-16px fw-400 pt-2">Yoomi has signed the American Physical Therapy
+                        Association Digital
+                        Transparency pledge, illustrating our commitment to
+                        the fact that digital "physical therapy" services are only performed or directed by licensed
+                        physical therapists in
+                        accordance with all regulations and APTA’s Standards of Practice for Physical Therapy.</p>
+                </div>
+
+                <div class="col-lg-6 pt-5 pt-lg-0">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-sm-7 justify-content-sm-end justify-content-center d-flex">
+                            <div class="d-flex align-items-center flex-column gap-4">
+                                <div class="Thoropass_box" data-aos="fade-up" data-aos-duration="500"
+                                    data-aos-delay="250" data-aos-easing="linear">
+                                    <img src="./assets/Images/WEBP/Thoropass.webp" alt="Thoropass">
+                                </div>
+
+                                <div class="Thoropass_box" data-aos="fade-down" data-aos-duration="600"
+                                    data-aos-delay="250" data-aos-easing="linear">
+                                    <img src="./assets/Images/WEBP/FDA.webp" alt="FDA.webp">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-5" data-aos="fade-right" data-aos-duration="700" data-aos-delay="250"
+                            data-aos-easing="linear">
+                            <div class="d-flex align-items-center flex-column">
+
+                                <div class="Thoropass_box mt-4 mt-sm-0">
+                                    <img src="./assets/Images/WEBP/APTA.webp" alt="APTA">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- slider -->
+    <section class="overflow-hidden pt-5 mt-5 " id="About">
+        <p class="Inter fs-16px fw-500 text_light_blue d-flex align-items-center justify-content-center mb-0"
+            data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250" data-aos-easing="linear">CLIENT
+            review
+        </p>
+        <div class="d-flex align-items-center justify-content-center pb-5" data-aos="zoom-in" data-aos-duration="500"
+            data-aos-delay="250" data-aos-easing="linear">
+            <h1 class="mb-0 fw-400 Jakarta-sans fs-40px">What are Client Think <span class="fw-600">About Us</span></h1>
+        </div>
+
+        <div class="my_container mb-5">
+
+            <div class="row py-3 py-sm-4 py-md-5">
+                <div class="slider_2" data-aos="zoom-in" data-aos-duration="500" data-aos-delay="250"
+                    data-aos-easing="linear">
+
+                    <div class="px-2 py-3 d-flex align-items-center justify-content-center">
+                        <div class="slideCard bg-slide_1 p-3 position-relative">
+                            <img class="w-41px colon_1" src="./assets/Images/WEBP/colon.webp" alt="colon">
+                            <img class="w-41px colon_2" src="./assets/Images/WEBP/colon_2.webp" alt="colon">
+                            <span class="d-flex align-items-center justify-content-center"><img
+                                    class="max-w-50px pt-5 mt-3" src="./assets/Images/WEBP/Joy_robert.webp"
+                                    alt=" Joy_robert"></span>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <p class="mb-0 Inter fw-500 fs-20px pt-1">Joy Robert <span class="fs-14px">( USA)</span>
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <p class="mb-0 Inter fw-500 fs-14px text_light_blue">CEO ( yoomi )</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="mb-0 Inter fw-400 opacity-75 max_504px text-center pt-1 pb-3">I'm a paragraph.
+                                    Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                                    double click me tool add your own content and make changes to the font.</p>
+
+                            </div>
+                            <span class="d-flex align-items-center justify-content-center pb-5 gap-2">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="px-2 py-3 d-flex align-items-center justify-content-center">
+                        <div class="slideCard bg-slide_1 p-3 position-relative">
+                            <img class="w-41px colon_1" src="./assets/Images/WEBP/colon.webp" alt="colon">
+                            <img class="w-41px colon_2" src="./assets/Images/WEBP/colon_2.webp" alt="colon">
+                            <span class="d-flex align-items-center justify-content-center"><img
+                                    class="max-w-50px pt-5 mt-3" src="./assets/Images/WEBP/Joy_robert.webp"
+                                    alt="Joy_robert"></span>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <p class="mb-0 Inter fw-500 fs-20px pt-1">Joy Robert <span class="fs-14px">( USA)</span>
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <p class="mb-0 Inter fw-500 fs-14px text_light_blue">CEO ( yoomi )</p>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <p class="mb-0 Inter fw-400 opacity-75 max_504px text-center pt-1 pb-3">I'm a paragraph.
+                                    Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                                    double click me tool add your own content and make changes to the font.</p>
+
+                            </div>
+                            <span class="d-flex align-items-center justify-content-center pb-5 gap-2">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                                <img src="./assets/Images/WEBP/Star.webp" alt="Star">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sign_up -->
+    <section class="overflow-hidden translate_y_30 position-relative z-2">
+        <div class=" container">
+            <div class="sign_up_box mb-5 mb-sm-0 position-relative overflow-hidden" data-aos="flip-down"
+                data-aos-duration="500" data-aos-delay="500" data-aos-easing="linear">
+                <img class="position-absolute bottom-0 end-0" src="./assets/Images/WEBP/send_box_overflow.webp"
+                    alt="send_box_overflow">
+                <div class="d-lg-flex align-items-center justify-content-lg-between">
+                    <div class="mb-0">
+                        <div
+                            class="d-flex align-items-center justify-content-center justify-content-lg-between pt-4 pt-lg-0">
+                            <img src="./assets/Images/WEBP/footer_icon.webp" alt="footer_icon">
+                        </div>
+                        <p
+                            class="mb-0 Inter fs-30px fw-400 text-white pt-4 pb-5 d-flex align-items-center justify-content-center justify-content-lg-between">
+                            Sign Up to Join <span class="fw-600">Our Newsletter</span></p>
+
+                        <div class="d-flex align-items-center justify-content-center justify-content-lg-between">
+                            <div class="px-2 px-sm-0">
+                                <div class="Email_box">
+                                    <div class="d-flex align-items-center justify-content-between gap-5 flex">
+                                        <input type="email" placeholder="Enter Your Email" class="border_none">
+                                        <a href="#" class="btn_1 ms-sm-5 Inter fw-600">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="py-4 mt-4" src="./assets/Images/SVG/man_img.svg" alt="man_img">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="bg-black pt_5 position-relative overflow-hidden" id="Contact_us">
+        <img class="w-100 fotter_line" src="./assets/Images/WEBP/footer_line.webp" alt="footer_line">
+        <img class="position-absolute top-50" src="./assets/Images/WEBP/Footer_overflow.webp" alt="Footer_overflow">
+        <div class="pt_5">
+            <div class="my_container">
+                <div class="row d-flex align-items-baseline justify-content-between">
+                    <div class="col-md-3">
+                        <img src="./assets/Images/WEBP/footer_icon.webp" alt="">
+                        <p class="text-white  Inter fw-300 fs-14px pt-4 mt-3">I'm a paragraph. Click here to add your
+                            own
+                            text
+                            and edit me. It’s
+                            easy.
+                            Just click
+                            “Edit
+                            Text”</p>
+
+                        <div class="d-flex align-items-center gap-2 py-4">
+                            <img src="./assets/Images/SVG/mail.svg" alt="mail">
+                            <a href="#" class="fs-16px Inter mb-0 text_white fw-300">contact@yoomi.com</a>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-2 pb-5 mb-3">
+                            <img src="./assets/Images/SVG/Vector.svg" alt="Vector">
+                            <a href="#" class="fs-16px Inter mb-0 text_white fw-300">+123 456 789</a>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-lg-5 col-md-7 pb-5 pb-md-0">
+                        <div class="row">
+
+                            <div class="col-4 px-0">
+                                <ul>
+                                    <li class="text-white Inter fw-600 fs-14px">About Us</li>
+                                    <li class="pt-3"><a href="#" class="text_white Inter fw-400 fs-14px">Meet the
+                                            Team</a></li>
+                                    <li class="pt-3"><a href="#" class="text_white Inter fw-400 fs-14px">Our Mission</a>
+                                    </li>
+                                    <li class="pt-3"><a href="#" class="text_white Inter fw-400 fs-14px">Our Vision</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="col-4 px-0">
+                                <ul>
+                                    <li class="text-white Inter fw-600 fs-14px">Contact Us</li>
+                                    <li class="pt-3"><a href="#" class="text_white Inter fw-400 fs-14px">Twitter</a>
+                                    </li>
+                                    <li class="pt-3"><a href="#" class="text_white Inter fw-400 fs-14px">Instagram</a>
+                                    </li>
+                                    <li class="pt-3"><a href="#" class="text_white Inter fw-400 fs-14px">Linkedin</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-4 px-0">
+                                <ul>
+                                    <li class="text-white Inter fw-600 fs-14px">About Us</li>
+                                    <li class="pt-3"><a href="#" class="text_white Inter fw-400 fs-14px">Recent</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="d-flex flex-wrap align-items-center justify-content-sm-end justify-content-center gap-4 pb-4">
+                    <a href="#" class="Inter fw-400 fs-14px text-white opacity-50">Terms of Service</a>
+                    <a href="#" class="Inter fw-400 fs-14px text-white opacity-50">Privacy Policy</a>
+                    <a href="#" class="Inter fw-400 fs-14px text-white opacity-50 pe-sm-5 pe-0">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a id="button"></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/style.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</body>
+
+</html>
